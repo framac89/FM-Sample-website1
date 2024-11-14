@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.colorebg {
+  background-color: #F1F1F0;
+}
+h1{
+  font-size: 4rem;
+}
+h4 em {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+.cardCustom{
+  font-family: "Marcellus", serif;
+  font-size: large;
+}
+.cardImgCustom {
+  width: 300px;
+  height: 400px;
+  border-radius: 10%;
+}
+
+.cardImgCustom:hover {
+  animation-name: animaCard;
+  animation-duration: 2s ;
+  animation-iteration-count: infinite;
+}
+.anim2:hover {
+  animation-name: animaCard;
+  animation-duration: 2s ;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animaCard {
+  0% {
+      transform:scale(1,1);
+}
+  50% {
+    transform: scale(1.05,1.05);
+    border:3px solid;
+  }
+  100% {
+    transform:scale(1,1);
+   
+  }
+}
+
+.titleCard {
+  font-family: "Marcellus", serif;
+}
+.readMore {
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient:vertical ;
+  overflow: hidden;
+}
+h3 , h2{
+  font-family: "Marcellus", serif;
+  font-size: 29px;
+  color: #111111;
+}
+.textGrey {
+  font-family: "Jost", sans-serif;
+  color: #8f8f8f;
+}
+.btn-custom {
+  font-family: "Jost", sans-serif;
+  
+  color: #8f8f8f;
+  padding: 30px 0 0 8px;
+  letter-spacing: 1px;
+}
+.a-custom {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+nav {
+  font-family: "Jost", sans-serif;
+  font-weight: 350;
+  font-style: normal;
+}
+h4 em {
+  font-size: 1.3rem;
+  font-weight: 350;
+}
+.fontpulsante {
+  font-size: 4vh;
+  font-family: "Jost", sans-serif;
+  letter-spacing: 2px;
+  padding-left: 1rem;
+}
+.fontcentrale {
+  font-size: 18px;
+}
+#tastogrossetto {
+  font-weight: bold;
+}
+.altezzacarousel {
+  height: 25vh;
+}
+p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+}
+.testosopra {
+  font-size: 4vh;
+  color: rgb(143, 143, 143);
+  text-align: center;
+}
+.testosotto {
+  font-size: 2vh;
+  color:rgb(143, 143, 143);
+  text-align: center;
+}
+.colorebottone , .carousel-indicators [data-bs-target] {
+  background-color:rgba(143, 143, 143,0.3);
+}
+.modalecart {
+  color:#8b907e;
+  margin: 0;
+}
+.modalebackground {
+  background-color: #8b907e;
+  color: white;
+}
+.badge {
+  color: #111111;
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin: 0;
+  background-color: #9da38f;
+  border-radius: 10px;
+  padding: 0.3rem;
+}
+.modalebackground:hover {
+  background-color: rgb(93, 100, 75);
+  color: white;
+}
+.btn:active {
+  background-color: #7d8272 !important;
+  color: white !important;
+}
+div ul[class*="modalist"] {
+  padding-left: 0;
+}
+.modaList {
+  text-decoration: none;
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+}
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 1.5rem;
+}
+.bottonenero:hover {
+  border: 1px solid black;
+  background-color: rgb(146, 156, 121);
+}
+  /* Animazione personalizzata */
+.modal.fade .modal-dialog {
+  transform: translateX(100%); /* Posiziona inizialmente la modale fuori dalla schermata */
+  transition: transform 0.5s ease-in-out;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: translateX(0); /* Fa scorrere la modale verso l'interno */
+}
+
